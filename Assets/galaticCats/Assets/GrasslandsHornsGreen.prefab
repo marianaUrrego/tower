@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6354594761870212310}
-  m_Layer: 10
+  m_Layer: 13
   m_Name: WeaponAttachment
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -53,12 +53,11 @@ GameObject:
   - component: {fileID: 6354594762289385795}
   - component: {fileID: 6354594762289385794}
   - component: {fileID: 6354594762289385797}
-  - component: {fileID: 6354594762289385798}
   - component: {fileID: 6354594762289385799}
   - component: {fileID: 6354594762289385796}
-  m_Layer: 10
+  m_Layer: 13
   m_Name: GrasslandsHornsGreen
-  m_TagString: Player
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -501,27 +500,6 @@ MonoBehaviour:
   TargetDamageResistanceProcessor: {fileID: 0}
   TargetAnimator: {fileID: 0}
   DisableAnimatorLogs: 1
---- !u!114 &6354594762289385798
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6354594762289385848}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b81dc1a6e4b189d4bae2faab8a2a1a25, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CycleOption: 0
-  LoopInitialMovementDirection: 0
-  PathElements: []
-  ReferenceMMPath: {fileID: 0}
-  AbsoluteReferencePath: 1
-  MinDistanceToGoal: 0.1
-  LockHandlesOnXAxis: 0
-  LockHandlesOnYAxis: 0
-  LockHandlesOnZAxis: 0
 --- !u!114 &6354594762289385799
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -560,7 +538,10 @@ MonoBehaviour:
       array:
       - {fileID: 6354594762289385799}
     Transitions:
-      array: []
+      array:
+      - Decision: {fileID: 0}
+        TrueState: 
+        FalseState: 
   TimeInThisState: 0
   Target: {fileID: 0}
   _lastKnownTargetPosition: {x: 0, y: 0, z: 0}
@@ -582,7 +563,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6354594762448593021}
   - component: {fileID: 6354594762448593018}
-  m_Layer: 10
+  m_Layer: 13
   m_Name: DeathFeedback
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -910,7 +891,7 @@ GameObject:
   - component: {fileID: 6354594762525534380}
   - component: {fileID: 6354594762525534382}
   - component: {fileID: 6354594762525534383}
-  m_Layer: 10
+  m_Layer: 13
   m_Name: DashParticles
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5744,7 +5725,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6354594762736149701}
   - component: {fileID: 6354594762736149698}
-  m_Layer: 10
+  m_Layer: 13
   m_Name: JumpStartFeedback
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10995,7 +10976,7 @@ GameObject:
   - component: {fileID: 6354594762998162050}
   - component: {fileID: 6354594762998162048}
   - component: {fileID: 6354594762998162051}
-  m_Layer: 10
+  m_Layer: 13
   m_Name: DustCircle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15949,7 +15930,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6354594763266862108}
   - component: {fileID: 6354594763266862109}
-  m_Layer: 10
+  m_Layer: 13
   m_Name: DamageFeedback
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16713,7 +16694,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6354594763521533901}
-  m_Layer: 10
+  m_Layer: 13
   m_Name: SecondaryWeaponAttachment
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16745,7 +16726,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6354594763531674604}
   - component: {fileID: 6354594763531674605}
-  m_Layer: 10
+  m_Layer: 13
   m_Name: FallingFeedback
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17208,7 +17189,7 @@ GameObject:
   - component: {fileID: 6354594763570838632}
   - component: {fileID: 6354594763570838646}
   - component: {fileID: 6354594763570838633}
-  m_Layer: 10
+  m_Layer: 13
   m_Name: Footsteps
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22032,7 +22013,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6354594763582244906}
   - component: {fileID: 6354594763582244907}
-  m_Layer: 10
+  m_Layer: 13
   m_Name: DashMMFeedback
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22549,7 +22530,7 @@ GameObject:
   - component: {fileID: 6354594763601724162}
   - component: {fileID: 6354594763601724164}
   - component: {fileID: 6354594763601724165}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: HornsGreenModel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
