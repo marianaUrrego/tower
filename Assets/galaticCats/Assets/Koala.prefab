@@ -16196,7 +16196,7 @@ GameObject:
   - component: {fileID: 8723883164771192958}
   - component: {fileID: 8723883164771192959}
   - component: {fileID: 8723883164135341189}
-  - component: {fileID: 8723883164771192956}
+  - component: {fileID: 7462629096282702772}
   m_Layer: 10
   m_Name: Koala
   m_TagString: Player
@@ -16770,7 +16770,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 256
   ObstaclesCheckFrequency: 1
---- !u!114 &8723883164771192956
+--- !u!114 &7462629096282702772
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
