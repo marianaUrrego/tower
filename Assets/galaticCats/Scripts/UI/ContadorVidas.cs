@@ -12,7 +12,7 @@ public class ContadorVidas : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        GameManager.Instance.CurrentLives = 20;
     }
 
     // Update is called once per frame
